@@ -1,0 +1,10 @@
+#lang sicp
+(define (plus-1 a b)
+  (if (= a 0) b (inc (+ (dec a) b))))
+
+(define (plus-2 a b)
+  (if (= a 0) b (+ (dec a) (inc b))))
+
+(plus-1 1 1)
+; (
+(plus-2 1 1)
